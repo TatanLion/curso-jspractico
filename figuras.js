@@ -122,3 +122,16 @@ function calcularAreaTriangulo(){
     const area = areaTriangulo(valueBase, valueAltura);
     alert(area);
 }
+
+function calcularAlturaIsosceles(lado1, lado2, base){
+    lado1 = parseInt(document.getElementById('InputIsosceles').value);
+    lado2 = parseInt(document.getElementById('InputIsosceles1').value);
+    base = parseInt(document.getElementById('InputIsosceles2').value);
+
+    if(lado1 == lado2 && lado1 != base){
+        const resultado = Math.sqrt(lado1**2 - (lado2**2 / 4));
+        console.log(resultado)
+    }else{
+        alert('Eso no es isosceles. ESTUPIDO!!!')
+    }
+}
